@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/main_tv"
+            android:layout_width="350dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Loading data..."
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dip" />
+
+        <LinearLayout
+            android:layout_width="330dip"
+            android:layout_height="90dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="33dip"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="110dip"
+                android:layout_height="90dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Borrower" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/brrowerJi_rb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="鸡" />
+
+                    <RadioButton
+                        android:id="@+id/brrowerMin_rb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="珉" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dip"
+                android:layout_height="90dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Loaner" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/loanerJi_rb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="鸡" />
+
+                    <RadioButton
+                        android:id="@+id/loanerMin_rb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="珉" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="110dip"
+                android:layout_height="90dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Currency" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/currencyCAD_rb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CAD" />
+
+                    <RadioButton
+                        android:id="@+id/currencyCNY_rb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CNY" />
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dip" />
+
+        <LinearLayout
+            android:layout_width="350dip"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="80dip"
+                android:layout_height="50dip"
+                android:gravity="right|center_vertical"
+                android:text="Amount:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/amount_et"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/coc_tv"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:gravity="left|center_vertical"
+                android:text="$"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/currency1_tv"
+                android:layout_width="120dip"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:text="Say something"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/currency_et"
+                android:layout_width="35dip"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="bottom|center_horizontal"
+                android:inputType="numberDecimal"
+                android:text="Name"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/currency2_tv"
+                android:layout_width="190dip"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:text="TextView"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dip" />
+
+        <EditText
+            android:id="@+id/comments_et"
+            android:layout_width="250dip"
+            android:layout_height="40dip"
+            android:ems="10"
+            android:gravity="left|center_vertical"
+            android:hint="       Please input comments"
+            android:inputType="textPersonName" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dip" />
+
+        <LinearLayout
+            android:layout_width="350dip"
+            android:layout_height="70dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="391dp">
+
+            <Button
+                android:id="@+id/submit_bt"
+                android:layout_width="130dip"
+                android:layout_height="50dip"
+                android:text="Submit"
+                android:textAllCaps="false" />
+
+            <Space
+                android:layout_width="30dip"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/view_bt"
+                android:layout_width="130dip"
+                android:layout_height="50dip"
+                android:text="View"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookNewService">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Press buttons below to add filters"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="120dip"
+                android:layout_height="80dip"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/BnsTimeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="TimeClk"
+                    android:text="Time"
+                    android:textAllCaps="false" />
+
+                <TextView
+                    android:id="@+id/bnsTv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Selected"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dip"
+                android:layout_height="80dip"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/BnsServiceBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="ServiceClk"
+                    android:text="Service"
+                    android:textAllCaps="false" />
+
+                <TextView
+                    android:id="@+id/bnsTv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Selected"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dip"
+                android:layout_height="80dip"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/BnsRateBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="RateClk"
+                    android:text="Rate"
+                    android:textAllCaps="false" />
+
+                <TextView
+                    android:id="@+id/bnsTv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Selected"
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="340dip"
+            android:layout_height="400dip"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="180dip"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/bnsListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="10dip"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="160dip"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bnsTvSel"
+                    android:layout_width="160dip"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Please choose a Service Provider from the list on the left to show more information."
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="70dip"
+                android:layout_height="60dip"
+                android:onClick="bnsBack"
+                android:text="Back"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/BNSReset"
+                android:layout_width="70dip"
+                android:layout_height="60dip"
+                android:onClick="BNSRes"
+                android:text="Reset"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="230dip"
+                android:layout_height="60dip"
+                android:onClick="btnChooseSP"
+                android:text="Choose this service provider"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

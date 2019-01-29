@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_signin"
+            android:layout_width="300dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_ServiceProvider_Sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Service Provider Sign Up"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="(The following fields are mandatory)" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dip" />
+
+            <TextView
+                android:id="@+id/text_info3"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:gravity="center"
+                android:text="  Please input your name:" />
+
+            <EditText
+                android:id="@+id/editText_sp_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView_info4"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:gravity="center"
+                android:text="  Please input your last name:" />
+
+            <EditText
+                android:id="@+id/editText_sp_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewndnd"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:gravity="center"
+                android:text="Please input your address:" />
+
+            <EditText
+                android:id="@+id/providerAva"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView_info5"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:gravity="center"
+                android:text="  Please input your phone number:" />
+
+            <EditText
+                android:id="@+id/editText_sp_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:gravity="center"
+                android:inputType="phone"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/text_info1"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:gravity="center_vertical|center"
+                android:text="  Please input your user name: " />
+
+            <EditText
+                android:id="@+id/editText_sp_username"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/text_info2"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center"
+                android:text="  Please input your password: " />
+
+            <EditText
+                android:id="@+id/editText_sp_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dip" />
+
+            <Button
+                android:id="@+id/btn_sp_signup"
+                android:layout_width="180dip"
+                android:layout_height="60dip"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="providerSignup"
+                android:text="Continue"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

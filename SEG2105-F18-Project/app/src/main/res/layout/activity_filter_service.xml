@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterService">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="\nPlease choose a service type you want the service provider to provide:" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dip" />
+
+        <LinearLayout
+            android:layout_width="300dip"
+            android:layout_height="360dip"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/FSListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dip" />
+
+        <TextView
+            android:id="@+id/FSTeVw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="150dip"
+                android:layout_height="50dip"
+                android:onClick="FSBack"
+                android:text="Back"
+                android:textAllCaps="false" />
+
+            <Space
+                android:layout_width="20dip"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="150dip"
+                android:layout_height="50dip"
+                android:onClick="FSSubmit"
+                android:text="Submit"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

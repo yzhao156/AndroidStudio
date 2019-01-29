@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterRate">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="\n\n\nPlease specify the minimum rate of the service:"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dip" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/FR1"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/FR2"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/FR3"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/FR4"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/FR5"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="5" />
+        </RadioGroup>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dip" />
+
+        <EditText
+            android:id="@+id/FRET"
+            android:layout_width="match_parent"
+            android:layout_height="150dip"
+            android:ems="10"
+            android:gravity="top|left"
+            android:inputType="textPersonName"
+            android:text="Please input your comment." />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="150dip"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:onClick="FrBck"
+                android:text="Back"
+                android:textAllCaps="false" />
+
+            <Space
+                android:layout_width="30dip"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="150dip"
+                android:layout_height="50dip"
+                android:onClick="AFRat"
+                android:text="Submit"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
